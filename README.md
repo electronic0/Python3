@@ -1,2 +1,2 @@
 # Python3
- Exercícios feitos por min do Curso em Video de Python
+ Exercícios e desafios feitos por min do Curso em Video de Python
