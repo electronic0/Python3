@@ -4,5 +4,7 @@ if conv == 1:
     print(f'O número {num} convertido para binário fica {bin(num)}')
 elif conv == 2:
     print(f'O número {num} convertido para octal fica {oct(num)}')
-else:
+elif conv == 3:
     print(f'O número {num} convertido para hexadecimal fica {hex(num)}')
+else:
+    print('Número invalido. Tente novamente.')
