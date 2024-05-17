@@ -1,7 +1,7 @@
 from datetime import date
 maiores, menores = 0, 0
 for c in range(1, 8):
-    nas = int(input('Ano de nascimento: '))
+    nas = int(input(f'Ano de nascimento da {c}° pessoa: '))
     idade = date.today().year - nas
     if idade >= 21:
         maiores += 1
