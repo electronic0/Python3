@@ -13,4 +13,4 @@ while s != 'N':
             menor = n
     s = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
     m = soma / q
-print(f'Voce digitou {q} valores e a media entre eles é {m} \nO maior número digitado foi o {maior} e o menor número digitado foi {menor}')
+print(f'Voce digitou {q} valores e a media entre eles é {m:.2f} \nO maior número digitado foi o {maior} e o menor número digitado foi {menor}')
