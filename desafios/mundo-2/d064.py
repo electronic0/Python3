@@ -1,4 +1,4 @@
-v, c, s = 0, 0, 0
+v = c = s = 0
 while v != 999:
     n = int(input('Digite um número (digite o valor 999 caso quer que o programa pare): '))
     if n != 999:
