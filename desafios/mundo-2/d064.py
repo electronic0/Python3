@@ -1,8 +1,8 @@
-n = int(input('Digite um numero: '))
-c, s = 0, 0
-while n != 999:
-    n = int(input('Digite um valor qualquer (se digitar o valor 999 o programa para): '))
+v, c, s = 0, 0, 0
+while v != 999:
+    n = int(input('Digite um número (digite o valor 999 caso quer que o programa pare): '))
     if n != 999:
         c += 1
         s = n + s
-print(f'Foram digitados {c} valores que, ao somar os números, dá o resultado de {s}')
+    v = n
+print(f'Foram digitados {c} valores que, ao somar ao todo, fica no valor de {s}')
