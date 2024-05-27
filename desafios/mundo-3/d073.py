@@ -1,0 +1,2 @@
+times = ('Corinthians', 'Palmeiras', 'Santos', 'Grêmio', 'Cruzeiro', 'Flamengo', 'Vasco da Gama', 'Chapecoense', 'Atlético-MG', 'Botafogo', 'Athletico-PR', 'Bahia', 'São Paulo', 'Fluminense', 'Sport Recife', 'EC Vitória', 'Coritiba', 'Avaí', 'Ponte Preta', 'Atlético-GO')
+print(f'Os 5 primeiros colocados da tabela são {times[:5]} \nOs 4 últimos colocados da tabela são {times[-4:]} \nTimes em ordem alfabética: {sorted(times)} \nO Chapecoense está na {len(times[5])}° posição')
