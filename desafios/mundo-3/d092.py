@@ -13,7 +13,7 @@ while True:
     dados['Contratação'] = contratacao
     salario = float(input('Salario R$'))
     dados['Salario'] = salario
+    dados['Aposentatoria'] = nascimento - (date.today().year - contratacao) + 35
     break
-dados['Aposentatoria'] = nascimento - (date.today().year - contratacao) + 35
 for k, v in dados.items():
     print(f'{k}: {v}')
