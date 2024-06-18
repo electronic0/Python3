@@ -1,19 +1,14 @@
 from datetime import date
 dados = {}
 while True:
-    nome = str(input('Digite o nome: ')).strip()
-    dados['Nome'] = nome
-    nascimento = date.today().year - int(input('Ano de nascimento: '))
-    dados['Idade'] = nascimento
-    ctps = int(input('Carteira de Trabalho (digite 0 caos não tenha): '))
-    dados['CTPS'] = ctps
-    if ctps == 0:
+    dados['Nome'] = str(input('Digite o nome: ')).strip()
+    dados['Idade'] = date.today().year - int(input('Ano de nascimento: '))
+    dados['CTPS'] = int(input('Carteira de Trabalho (digite 0 caso não tenha): '))
+    if dados['CTPS'] == 0:
         break
-    contratacao = int(input('Ano de contratação: '))
-    dados['Contratação'] = contratacao
-    salario = float(input('Salario R$'))
-    dados['Salario'] = salario
-    dados['Aposentatoria'] = nascimento - (date.today().year - contratacao) + 35
+    dados['Contratação'] = int(input('Ano de contratação: '))
+    dados['Salario'] = float(input('Salario R$'))
+    dados['Aposentatoria'] = dados['Idade'] - (date.today().year - dados['Contratação']) + 35
     break
 for k, v in dados.items():
     print(f'{k}: {v}')
