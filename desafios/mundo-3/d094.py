@@ -17,3 +17,7 @@ print(f'Ao todo temos {len(dados)} pessoas cadastradas. \nA média das idades ca
 for p in dados:
     if p['Sexo'] in 'F':
         print(f'{p['Nome']}', end = ' ')
+for p in dados:
+    if p['Idade'] >= media:
+        for c, v in p.items():
+            print(f'\n{c} = {v};', end = ' ')
