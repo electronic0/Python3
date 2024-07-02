@@ -1,4 +1,9 @@
 def notas(* notas, sit = False):
+    """
+        - Função para analisar notas e situações de varios alunos.
+        Notas: Uma ou mais notas dos alunos
+        Sit: Valor opcional indicando se deve ou não adicionar a situação
+    """
     lista = {
         'Total': len(notas),
         'Maior': max(notas),
